@@ -1,18 +1,21 @@
-import type { NextPage } from "next";
+import React from "react";
 import Head from "next/head";
+import BookSearch from "./BookSearch";
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
-    <>
+    <div style={{ width: "95%" }}>
       <Head>
         <title>Notion Tools</title>
       </Head>
 
       <main>
-        <h1>Hi</h1>
-      </main>
-    </>
-  );
-};
+        <h1>Notion Tools</h1>
+        <BookSearch />
 
-export default Home;
+        <h2>Songs</h2>
+        <input placeholder="Search for a song" />
+      </main>
+    </div>
+  );
+}

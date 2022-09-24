@@ -1,0 +1,70 @@
+body {
+  font-family: "Helvetica";
+}
+
+input {
+  padding: 10px;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.search-suggestions {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.book-result {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #FAFEFD;
+  border: 0;
+  text-align: left;
+  margin: 5px;
+  padding: 20px;
+  width:170px;
+}
+
+.book-result:hover {
+  background-color: #EBFDF9;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: bold;
+  margin: 0 5px 15px;
+}
+
+.author {
+  margin: 5px;
+  margin-bottom: 15px;
+}
+
+.toast {
+  padding: 20px;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  right: 20px;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  border-width: 3px;
+}
+
+.success {
+  border-color:green;
+  background-color: lightgreen;
+}
+
+.warning {
+  border-color:gold;
+  background-color: lightyellow;
+}
+
+.show {
+  opacity: 1;
+}

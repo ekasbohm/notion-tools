@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb",
+    "airbnb-typescript",
+    "prettier"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [2, { "extensions": [".ts", ".tsx"] }]
+  },
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  }
+}
