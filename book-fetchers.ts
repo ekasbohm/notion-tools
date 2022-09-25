@@ -1,9 +1,9 @@
 export async function searchBooks(searchTerm: string) {
   const res = await fetch(
-    `https://www.googleapis.com/books/v1/volumes?q=${searchTerm}`
+    `https://www.googleapis.com/books/v1/volumes?q=${searchTerm}&fields=items(id,volumeInfo/title,volumeInfo/authors,volumeInfo/imageLinks)&maxResults=7&orderBy=relevance&printType=books`
   );
   const { items } = await res.json();
-  return items ? items.slice(0, 7) : [];
+  return items || [];
 }
 
 export async function addBook(title: string, author: string, cover?: string) {
