@@ -3,6 +3,8 @@ declare global {
     interface ProcessEnv {
       BOOKS_DB_ID: string;
       NOTION_TOKEN: string;
+      SPOTIFY_CLIENT_ID: string;
+      SPOTIFY_CLIENT_SECRET: string;
       NODE_ENV: "development" | "production";
     }
   }

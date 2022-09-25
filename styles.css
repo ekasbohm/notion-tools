@@ -21,16 +21,16 @@ input {
   flex-direction: column;
   width: 100%;
   justify-content: space-between;
-  background-color: #FAFEFD;
+  background-color: #fafefd;
   border: 0;
   text-align: left;
   margin: 5px;
   padding: 20px;
-  width:170px;
+  width: 170px;
 }
 
 .book-result:hover {
-  background-color: #EBFDF9;
+  background-color: #ebfdf9;
   cursor: pointer;
 }
 
@@ -39,9 +39,33 @@ input {
   margin: 0 5px 15px;
 }
 
+.track-info {
+  height: fit-content;
+}
+
+.track-title {
+  font-weight: bold;
+  margin: 15px 5px 5px;
+}
+
 .author {
   margin: 5px;
   margin-bottom: 15px;
+  color: gray;
+}
+
+.album-data {
+  margin: 5px;
+  color: gray;
+}
+
+.album-data:last-of-type {
+  margin-bottom:15px;
+}
+
+.album-artist {
+  margin: 5px;
+  color: gray
 }
 
 .toast {
@@ -56,12 +80,12 @@ input {
 }
 
 .success {
-  border-color:green;
+  border-color: green;
   background-color: lightgreen;
 }
 
 .warning {
-  border-color:gold;
+  border-color: gold;
   background-color: lightyellow;
 }
 
